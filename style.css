@@ -13,7 +13,7 @@
 .header img {
   width: 100%;
 }
-.header .more_inf {
+.link-inform {
   font-family: fantasy, cursive;
 }
 @media (max-width:768px) {
@@ -23,7 +23,7 @@
   }
 
 }
-.centered-main-page-element {
+.page-todo {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -33,7 +33,7 @@
   display: inline-block;
   flex-grow: 1;
 }
-.task-row-wrapper {
+.add-task {
   display: flex;
 }
 ul {/*намеренный сброс дефолтный стилей*/
