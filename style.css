@@ -59,11 +59,13 @@ input{/*намеренный сброс дефолтный стилей*/
   cursor: pointer;
   outline: none;
 }
-button:hover {
+.btn:hover {
   color: #3a3a3a;
 }
 /* Heading */
-h3 {
+.add__title,
+.plan__title,
+.done__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -71,6 +73,8 @@ h3 {
   padding: 30px 0 10px;
   margin: 0;
   text-transform: uppercase;
+  display: block;
+  margin: 0 0 20px;
 }
 input[type="text"] {
   margin: 0;
@@ -88,10 +92,6 @@ input[type="text"]:focus {
   color: #333;
 }
 /* New Task */
-h3 {
-  display: block;
-  margin: 0 0 20px;
-}
 .add__content_input {
   width: 318px;
 }
@@ -129,13 +129,15 @@ button.delete img:hover {
 }
 /* Edit Task */
 ul li input[type=text] {
-  display: none;
+  display: none
 }
+
 ul li.plan__task-edit input[type=text] {
   display: inline-block;
-  width: 224px;
+  width: 224px
 }
-.plan__task-edit_label {
+
+ul li.plan__task-edit label {
   display: none;
 }
 /* Completed */
