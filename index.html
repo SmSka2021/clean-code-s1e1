@@ -31,25 +31,25 @@
             </button>
           </li>
           <li class="plan__task-edit">
-            <input type="checkbox">
-            <label for="input-edit" class="task">Go Shopping</label>
-            <input type="text" id="input-edit" value="Go Shopping" class="task">
-            <button class="edit">Save</button>
-            <button class="delete">
+            <input class="plan__task-edit_checkbox" type="checkbox">
+            <label class="plan__task-edit_label task" for="input-edit" >Go Shopping</label>
+            <input class="plan__task-edit_input task" type="text" id="input-edit" value="Go Shopping" >
+            <button class="plan__task-edit_button-save edit">Save</button>
+            <button class="plan__task-edit_button-delete delete">
               <img src="./remove.svg" alt="button for remove">
             </button>
           </li>
         </ul>
       </section>
-      <section class="completed-todo">    
-        <h3>Completed</h3>
-        <ul id="completed-tasks">
-          <li>
-            <input type="checkbox" checked>
-            <label for="input-delete" class="task">See the Doctor</label>
-            <input type="text" id="input-delete" class="task">
-            <button class="edit">Edit</button>
-            <button class="delete">
+      <section class="done">    
+        <h3 class="done__title">Completed</h3>
+        <ul class="done__tasks">
+          <li class="done__task">
+            <input class="done__task_input" type="checkbox" checked>
+            <label class="done__task_label task" for="input-delete" >See the Doctor</label>
+            <input class="done__task_input-delete task" type="text" id="input-delete" >
+            <button class="done__task_button-edit edit">Edit</button>
+            <button class="done__task_button-delete delete">
               <img src="./remove.svg" alt="button for remove">
             </button>
           </li>
