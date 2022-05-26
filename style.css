@@ -1,5 +1,5 @@
 /* Basic Style */
-.body {
+.todo {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -10,10 +10,10 @@
   display: block;
   text-align: right;
 }
-.header-img {
+.header__logo {
   width: 100%;
 }
-.link-inform {
+.header__link {
   font-family: fantasy, cursive;
 }
 @media (max-width:768px) {
@@ -33,7 +33,7 @@
   display: inline-block;
   flex-grow: 1;
 }
-.add-task {
+.add__content {
   display: flex;
 }
 ul {/*намеренный сброс дефолтный стилей*/
@@ -89,7 +89,7 @@ h3 {
   display: block;
   margin: 0 0 20px;
 }
-input#new-task {
+.add__content_input {
   width: 318px;
 }
 /* Task list */
@@ -133,10 +133,10 @@ ul#completed-tasks label {
 ul li input[type=text] {
   display: none;
 }
-ul li.editMode input[type=text] {
+ul li.plan__task-edit input[type=text] {
   display: inline-block;
   width: 224px;
 }
-ul li.editMode label {
+ul li.plan__task-edit label {
   display: none;
 }

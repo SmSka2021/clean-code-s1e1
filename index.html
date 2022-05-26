@@ -5,32 +5,32 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
     <title>Todo App</title>
   </head>
-  <body class="body">
+  <body class="todo">
     <header class="header">
-      <img class="header-img" src="./eisenhower-matrix.jpg" alt="the Eisenhower matrix">
-      <a class="link-inform" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+      <img class="header__logo" src="./eisenhower-matrix.jpg" alt="the Eisenhower matrix">
+      <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </header>
     <main class="page-todo">
-      <section class="add-todo">
-        <h3>Add Item</h3>
-        <div class="add-task">
-          <input id="new-task" class="task" type="text">
-          <button>Add</button>
+      <section class="add">
+        <h3 class="add__title">Add Item</h3>
+        <div class="add__content">
+          <input class="add__content_input task" type="text">
+          <button class="add__content_button">Add</button>
         </div>
       </section>
-      <section class="planned-todo">
-        <h3>Todo</h3>
-        <ul id="planned-tasks">
-          <li>
-            <input type="checkbox">
-            <label for="input-add" class="task">Pay Bills</label>
-            <input type="text" id="input-add" class="task">
-            <button class="edit">Edit</button>
-            <button class="delete">
+      <section class="plan">
+        <h3 class="plan__title">Todo</h3>
+        <ul class="plan__tasks">
+          <li class="plan__task-add">
+            <input class="plan__task-add_checkbox" type="checkbox">
+            <label class="plan__task-add_label task" for="input-add" >Pay Bills</label>
+            <input  class="plan__task-add_input task" type="text" id="input-add">
+            <button class="plan__task-add_button-edit edit">Edit</button>
+            <button class="plan__task-add_button-delete delete">
               <img src="./remove.svg" alt="button for remove">
             </button>
           </li>
-          <li class="editMode">
+          <li class="plan__task-edit">
             <input type="checkbox">
             <label for="input-edit" class="task">Go Shopping</label>
             <input type="text" id="input-edit" value="Go Shopping" class="task">
