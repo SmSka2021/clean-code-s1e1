@@ -36,18 +36,20 @@
 .add__content {
   display: flex;
 }
-ul {/*намеренный сброс дефолтный стилей*/
+.plan__tasks,
+.done__tasks {
   margin: 0;
   padding: 0px;
 }
-li {/*намеренный сброс дефолтный стилей*/
+.plan__task-add,
+.plan__task-edit,
+.done__task {
   list-style: none;
 }
-input,
-button {/*намеренный сброс дефолтный стилей*/
-  outline: none;
+input{/*намеренный сброс дефолтный стилей*/
+  outline: none; 
 }
-button {
+.btn {
   background: none;
   border: 0px;
   color: #888;
@@ -55,6 +57,7 @@ button {
   width: 60px;
   font-family: Lato, sans-serif;
   cursor: pointer;
+  outline: none;
 }
 button:hover {
   color: #3a3a3a;
@@ -124,11 +127,6 @@ button.delete img {
 button.delete img:hover {
   transform: rotateZ(0);
 }
-/* Completed */
-.done__tasks label {
-  text-decoration: line-through;
-  color: #888;
-}
 /* Edit Task */
 ul li input[type=text] {
   display: none;
@@ -137,6 +135,11 @@ ul li.plan__task-edit input[type=text] {
   display: inline-block;
   width: 224px;
 }
-ul li.plan__task-edit label {
+.plan__task-edit_label {
   display: none;
+}
+/* Completed */
+.done__tasks label {
+  text-decoration: line-through;
+  color: #888;
 }

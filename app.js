@@ -11,7 +11,7 @@
 var taskInput=document.querySelector(".add__content_input");//Add a new task.
 var addButton=document.getElementsByTagName("button")[0];//first button
 var incompleteTaskHolder=document.querySelector(".plan__tasks");//ul 
-var completedTasksHolder=document.querySelector(".done__tasks");//done__tasks
+var completedTasksHolder=document.querySelector(".done__tasks");
 
 
 //New task list item
@@ -41,9 +41,9 @@ var createNewTaskElement=function(taskString){
     editInput.className="task";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className="edit";
+    editButton.className="edit btn";
 
-    deleteButton.className="delete";
+    deleteButton.className="delete btn";
     deleteButtonImg.src='./remove.svg';
     deleteButtonImg.alt="button for remove"
     deleteButton.appendChild(deleteButtonImg);
