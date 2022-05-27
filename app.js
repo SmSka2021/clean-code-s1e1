@@ -31,13 +31,14 @@ var createNewTaskElement=function(taskString){
     var deleteButtonImg=document.createElement('img');//delete button image
 
     label.innerText=taskString;
-    label.className='task';
+    label.className='label';
     listItem.className='one-todo';
 
     //Each elements, needs appending
     checkBox.type='checkbox';
+    checkBox.className='checkbox';
     editInput.type='text';
-    editInput.className='task add__content_input';
+    editInput.className='text add__content_input';
 
     editButton.innerText='Edit'; //innerText encodes special characters, HTML does not.
     editButton.className='edit btn';
@@ -82,11 +83,11 @@ var editTask=function(){
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector('label');
     var editBtn=listItem.querySelector('.edit');
-    var containsClass=listItem.classList.contains('plan__task-edit');
-    //If class of the parent is .plan__task-edit
+    var containsClass=listItem.classList.contains('plan__edit');
+    //If class of the parent is .plan__edit
     if(containsClass){
 
-        //switch to .plan__task-edit
+        //switch to .plan__edit
         //label becomes the inputs value.
         label.innerText=editInput.value;
         editBtn.innerText='Edit';
@@ -95,8 +96,8 @@ var editTask=function(){
         editBtn.innerText='Save';
     }
 
-    //toggle .plan__task-edit on the parent.
-    listItem.classList.toggle('plan__task-edit');
+    //toggle .plan__edit on the parent.
+    listItem.classList.toggle('plan__edit');
 };
 
 

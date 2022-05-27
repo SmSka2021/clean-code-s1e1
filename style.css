@@ -27,8 +27,8 @@
   }
 
 }
-
-.task {
+.label,
+.text {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -41,13 +41,8 @@
   margin: 0;
   padding: 0px;
 }
-.plan__task-add,
-.plan__task-edit,
-.done__task {
+.one-todo {
   list-style: none;
-}
-input{/*намеренный сброс дефолтных стилей*/
-  outline: none; 
 }
 .btn {
   background: none;
@@ -75,10 +70,7 @@ input{/*намеренный сброс дефолтных стилей*/
   display: block;
   margin: 0 0 20px;
 }
-.add__content_input,
-.plan__task-add_input,
-.plan__task-edit_input,
-.done__task_input-delete {
+.text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -91,10 +83,7 @@ input{/*намеренный сброс дефолтных стилей*/
   color: #888;
   outline: none;
 }
-.add__content_input:focus,
-.plan__task-add_input:focus,
-.plan__task-edit_input:focus,
-.done__task_input-delete:focus {
+.text:focus {
   color: #333;
 }
 /* New Task */
@@ -113,7 +102,7 @@ input{/*намеренный сброс дефолтных стилей*/
 .one-todo > * {
   vertical-align: middle;
 }
-.one-todo > input[type="checkbox"] {
+.one-todo > .checkbox {
   margin: 0 10px;
   outline: none; 
 }
@@ -139,12 +128,12 @@ ul li input[type=text] {
   display: none
 }
 
-ul li.plan__task-edit input[type=text] {
+ul li.plan__edit input[type=text] {
   display: inline-block;
   width: 224px
 }
 
-ul li.plan__task-edit label {
+ul li.plan__edit label {
   display: none;
 }
 /* Completed */
