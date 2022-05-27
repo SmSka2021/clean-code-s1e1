@@ -115,29 +115,29 @@
 .one-todo > .text {
   width: 226px;
 }
-.delete img {
+.delete-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.delete img:hover {
+.delete-img:hover {
   transform: rotateZ(0);
 }
 /* Edit Task */
-ul li input[type=text] {
+ul li .text {
   display: none
 }
 
-ul li.plan__edit input[type=text] {
+ul li.plan__edit .text {
   display: inline-block;
   width: 224px
 }
 
-ul li.plan__edit label {
+.plan__edit .labels {
   display: none;
 }
 /* Completed */
-.done__tasks label {
+.done__tasks .labels {
   text-decoration: line-through;
   color: #888;
 }
