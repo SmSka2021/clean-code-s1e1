@@ -86,11 +86,9 @@
 .text:focus {
   color: #333;
 }
-/* New Task */
 .add__content_input {
   width: 318px;
 }
-/* Task list */
 .one-todo {
   overflow: hidden;
   padding: 20px  0;
@@ -124,7 +122,7 @@
   transform: rotateZ(0);
 }
 /* Edit Task */
-ul li .text {
+.one-todo .text {
   display: none
 }
 
