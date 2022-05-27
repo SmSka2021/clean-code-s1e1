@@ -128,7 +128,7 @@ ul li .text {
   display: none
 }
 
-ul li.plan__edit .text {
+.plan__edit .text {
   display: inline-block;
   width: 224px
 }
