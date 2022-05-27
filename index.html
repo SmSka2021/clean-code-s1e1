@@ -21,21 +21,21 @@
       <section class="plan">
         <h3 class="plan__title">Todo</h3>
         <ul class="plan__tasks">
-          <li class="plan__task-add">
+          <li class="plan__task-add one-todo">
             <input class="plan__task-add_checkbox" type="checkbox">
             <label class="plan__task-add_label task" for="input-add" >Pay Bills</label>
             <input  class="plan__task-add_input task" type="text" id="input-add">
-            <button class="plan__task-add_button-edit edit btn">Edit</button>
-            <button class="plan__task-add_button-delete delete btn">
+            <button class="plan__task-add_btn edit btn">Edit</button>
+            <button class="plan__task-add_btn delete btn">
               <img src="./remove.svg" alt="button for remove">
             </button>
           </li>
-          <li class="plan__task-edit">
+          <li class="plan__task-edit one-todo">
             <input class="plan__task-edit_checkbox" type="checkbox">
             <label class="plan__task-edit_label task" for="input-edit" >Go Shopping</label>
             <input class="plan__task-edit_input task" type="text" id="input-edit" value="Go Shopping" >
-            <button class="plan__task-edit_button-save edit btn">Save</button>
-            <button class="plan__task-edit_button-delete delete btn">
+            <button class="plan__task-edit_btn-save edit btn">Save</button>
+            <button class="plan__task-edit_btn-delete delete btn">
               <img src="./remove.svg" alt="button for remove">
             </button>
           </li>
@@ -44,12 +44,12 @@
       <section class="done">    
         <h3 class="done__title">Completed</h3>
         <ul class="done__tasks">
-          <li class="done__task">
+          <li class="done__task one-todo">
             <input class="done__task_input" type="checkbox" checked>
             <label class="done__task_label task" for="input-delete" >See the Doctor</label>
             <input class="done__task_input-delete task" type="text" id="input-delete" >
-            <button class="done__task_button-edit edit btn">Edit</button>
-            <button class="done__task_button-delete delete btn">
+            <button class="done__task_btn-edit edit btn">Edit</button>
+            <button class="done__task_btn-delete delete btn">
               <img src="./remove.svg" alt="button for remove">
             </button>
           </li>
