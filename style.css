@@ -124,11 +124,11 @@
 .one-todo .text {
   display: none
 }
-.plan__edit .text {
+.plan-edit .text {
   display: inline-block;
   width: 224px
 }
-.plan__edit .labels {
+.plan-edit .labels {
   display: none;
 }
 .done__tasks .labels {

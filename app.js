@@ -84,11 +84,11 @@ var editTask=function(){
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector('label');
     var editBtn=listItem.querySelector('.edit');
-    var containsClass=listItem.classList.contains('plan__edit');
-    //If class of the parent is .plan__edit
+    var containsClass=listItem.classList.contains('plan-edit');
+    //If class of the parent is .plan-edit
     if(containsClass){
 
-        //switch to .plan__edit
+        //switch to .plan-edit
         //label becomes the inputs value.
         label.innerText=editInput.value;
         editBtn.innerText='Edit';
@@ -97,8 +97,8 @@ var editTask=function(){
         editBtn.innerText='Save';
     }
 
-    //toggle .plan__edit on the parent.
-    listItem.classList.toggle('plan__edit');
+    //toggle .plan-edit on the parent.
+    listItem.classList.toggle('plan-edit');
 };
 
 
