@@ -121,20 +121,16 @@
 .delete-img:hover {
   transform: rotateZ(0);
 }
-/* Edit Task */
 .one-todo .text {
   display: none
 }
-
 .plan__edit .text {
   display: inline-block;
   width: 224px
 }
-
 .plan__edit .labels {
   display: none;
 }
-/* Completed */
 .done__tasks .labels {
   text-decoration: line-through;
   color: #888;
