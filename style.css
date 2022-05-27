@@ -27,7 +27,7 @@
   }
 
 }
-.label,
+.labels,
 .text {
   width: 56%;
   display: inline-block;
@@ -106,13 +106,13 @@
   margin: 0 10px;
   outline: none; 
 }
-.one-todo > label {
+.labels {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-.one-todo > input[type="text"] {
+.one-todo > .text {
   width: 226px;
 }
 .delete img {
