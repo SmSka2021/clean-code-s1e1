@@ -122,11 +122,11 @@
   transform: rotateZ(0);
 }
 .one-todo .text {
-  display: none
+  display: none;
 }
 .plan-edit .text {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 .plan-edit .labels {
   display: none;
